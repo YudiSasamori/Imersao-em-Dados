@@ -1,0 +1,23 @@
+
+USE PROD
+
+SELECT * FROM [PROD].[dbo].[OM_SYM_COMPANY]
+SELECT * FROM dbo.OM_SYM_COMPANY
+SELECT * FROM dbo.OM_ME_SASAMORI
+SELECT * FROM dbo.OM_KCC_DADOS
+
+
+
+/*Realize uma query, trazendo o total lançado, do gerente 'MILTON' e mês Maio.*/
+
+SELECT 
+	SUM(VALOR_LANCTO) AS TOTAL_LANC
+FROM dbo.OM_SYM_COMPANY
+WHERE 1=1
+	AND GERENTE = 'MILTON'
+    AND MONTH(Data) = 5
+
+
+
+
+
