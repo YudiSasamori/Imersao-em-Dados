@@ -18,7 +18,7 @@ AS BEGIN
 -- AQUI ELE PEGA OS DADOS DA BASE DE DADOS EM PRODUÇÃO E COLOCA-OS EM UMA TABELA TEMPORÁRIA
 
 
-SELECT DISTINCT 
+SELECT
 	 CAST(Data AS date)       AS dt_data
 		,CONTA_REDUZIDA       AS cd_conta_cantabil
 		,COD_AREA             AS cd_area
